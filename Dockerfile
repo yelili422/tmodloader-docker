@@ -135,6 +135,7 @@ RUN unzip -o tModLoader.zip \
     && rm tModLoader.zip
 
 COPY DotNetInstall.sh ./LaunchUtils
+COPY ScriptCaller.sh ./LaunchUtils
 COPY entrypoint.sh .
 COPY inject.sh /usr/local/bin/inject
 COPY autosave.sh .
